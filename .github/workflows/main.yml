@@ -1,31 +1,31 @@
 on:
   push:
     branches:
-main
+main:
   pull_request:
     branches:
-main
+main:
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: 
 
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version:
 
     steps:
-name: Checkout repository
-      uses: actions/checkout@v3
+name: 
+      uses: 
 
-name: Set up Node.js
-      uses: actions/setup-node@v3
+name: 
+      uses: 
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version:  
 
-name: Install dependencies
-      run: npm install
+name: 
+      run: 
 
-name: Start application
-      run: npm start
+name: 
+      run: 
